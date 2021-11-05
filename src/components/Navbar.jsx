@@ -32,6 +32,10 @@ const Navbar = () => {
     }
   }, [screenSize]);
 
+  const clickMenuHandler = () => {
+    setActiveMenu(!activeMenu);
+  };
+
   return (
     <div className="nav-container">
       <div className="logo-container">
@@ -44,7 +48,7 @@ const Navbar = () => {
         </Button>
       </div>
       {activeMenu && (
-      <Menu theme="dark">
+      <Menu theme="dark" onClick={clickMenuHandler}>
         <Menu.Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
         </Menu.Item>
