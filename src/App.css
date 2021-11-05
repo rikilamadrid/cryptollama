@@ -119,12 +119,12 @@ a:hover {
 
 @media screen and (max-width:800px) {
   .app {
-      flex-direction: column;
-      overflow: hidden;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .navbar {
-      flex: 1;
+    flex: 1;
   }
 
   .main {
