@@ -33,7 +33,9 @@ const Navbar = () => {
   }, [screenSize]);
 
   const clickMenuHandler = () => {
-    setActiveMenu(!activeMenu);
+    if (screenSize <= 800) {
+      setActiveMenu(!activeMenu);
+    }
   };
 
   return (
