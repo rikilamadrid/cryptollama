@@ -44,6 +44,10 @@ a:hover {
   padding: 20px;
 }
 
+.ant-menu-dark .ant-menu-item-icon, .ant-menu-dark .ant-menu-item-selected .anticon {
+  padding-top:5px;
+}
+
 .nav-container {
   /* position: fixed; */
   left: 0;
@@ -57,12 +61,12 @@ a:hover {
   background-color: var(--bgPrimary);
   display: flex;
   padding: 20px;
-  /* align-items: center; */
   width: 100%;
 }
 
 .ant-menu-dark {
   background-color: var(--bgPrimary) !important;
+
 }
 
 .ant-menu-item-selected {
@@ -124,33 +128,44 @@ a:hover {
   }
 
   .main {
-      flex: 1;
-      margin-top: 90px;
-      margin-left: 0px;
-      margin-right: 10px;
+    flex: 1;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 10px;
   }
 
   .nav-container {
-      height: 8vh;
-      position:fixed;
-      width: 100%;
-      z-index: 100;
-      background-color: var(--bgSecondary);
+    height: 8vh;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--bgSecondary);
   }
 
   .menu-control-container {
-      display: block !important;
+    display: block !important;
   }
 
   .ant-menu {
-      position: absolute;
-      right: 0px;
+    position: absolute;
+    right: 0px;
   }
+
+  .ant-menu-item-icon {
+    padding-top: 7px !important;
+  }
+
+  .ant-menu-item {
+    display: flex !important;
+    align-items: center !important;
+  }
+
   .home-title {
-      font-size: 1.4rem !important;
+    font-size: 1.4rem !important;
   }
+
   .show-more {
-      font-size: 1.3rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
